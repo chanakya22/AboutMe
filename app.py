@@ -7,7 +7,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, Flask!"
+    # return "Hello, Flask!"
+    return render_template("homescreen.html")
+
+@app.route("/about/")
+def about():
+    # return "Hello, Flask!"
+    return render_template("about.html")
 
 
 
@@ -29,3 +35,7 @@ def hello(name = None):
     # return content
 
     return render_template("home.html",name=name,date=datetime.now())
+
+@app.route("/api/data")
+def get_data():
+    return app.send_static_file("data.json")
