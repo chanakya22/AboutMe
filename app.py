@@ -40,7 +40,13 @@ def hello(name = None):
 def get_data():
     return app.send_static_file("data.json")
 
+@app.after_request
+def add_header(response):
+    response.cache_control.no_store = True
+    response.headers['Cache-Control'] = 'public, max-age=0'
+    return response
+
 
 
 # TODO:
-# SPA - for profile/experiences/contact/projects/            Home/Blog/Portfolio/
+# SPA - for profile/experiences/contact/projects/            Home/Blog/Portfolio-Work/Skill/Contact

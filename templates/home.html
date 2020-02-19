@@ -5,7 +5,7 @@
         <title>Hello, Flask</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
     </head>
-    <body>
+    <body background-color: lightslategray>
         {%if name %}
             <span class="message">Hello there, {{ name }}!</span> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
         {% else %}

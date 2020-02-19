@@ -1,13 +1,14 @@
 .message {
     font-weight: 5000;
-    color: red;
+    color: pink;
 }
 .navbar {
-    background-color: lightslategray;
+    background-color: pink;
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     padding: 8px 5px 8px 5px;
+    float: right;
 }
 
 .navbar a {
@@ -18,6 +19,8 @@
 .navbar-brand {
     font-size: 1.2em;
     font-weight: 600;
+    float: right;
+    margin-left: 30px;
 }
 
 .navbar-item {
@@ -28,4 +31,8 @@
 .body-content {
     padding: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-bg{
+    background-color: pink;
 }
