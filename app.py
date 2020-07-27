@@ -3,18 +3,30 @@ from datetime import datetime
 import re
 from flask import render_template
 
+# TODO
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
+def landingpage():
     # return "Hello, Flask!"
-    return render_template("homescreen.html")
+    return render_template("home.html")
 
 @app.route("/about/")
 def about():
     # return "Hello, Flask!"
     return render_template("about.html")
+
+
+@app.route("/portfolio/")
+def portfolio():
+    # return "Hello, Flask!"
+    return render_template("portfolio.html")
+
+@app.route("/home/")
+def home():
+    # return "Hello, Flask!"
+    return render_template("home.html")
 
 
 
@@ -35,7 +47,7 @@ def hello(name = None):
     # content = "Hello there, " + clean_name + "! It's " + formatted_now
     # return content
 
-    return render_template("home.html",name=name,date=datetime.now())
+    return render_template("landingpage.html",name=name,date=datetime.now())
 
 @app.route("/api/data")
 def get_data():

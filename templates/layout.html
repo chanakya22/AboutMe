@@ -7,21 +7,22 @@
     </head>
 
     <body class = "body-bg">
-        <div class="navbar">
-            <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
-            <a href="{{ url_for('home') }}" class="navbar-brand">Blog</a>
-            <a href="{{ url_for('home') }}" class="navbar-brand">Portfolio</a>
-            <a href="{{ url_for('home') }}" class="navbar-brand">Skill</a>
-            <a href="{{ url_for('about') }}" class="navbar-brand">Contact</a>
+        <div class="navbarleft">
+            <a href="{{ url_for('home') }}" class="navbar-brand-left">HELLO !</a>
+            <a href="{{ url_for('home') }}" class="navbar-brand-left">SKILLS</a>
+            <a href="{{ url_for('portfolio') }}" class="navbar-brand-left">PORTFOLIO</a>
+            <!-- <a class="navbar-brand-center">CHANAKYA KASPA | Senior Software Engineer</a> -->
+            <label class="lbl" >Chanakya Kaspa | Senior Software Engineer</label>
+            <a href="{{ url_for('home') }}" class="navbar-brand-right">BLOG</a>
+            <a href="{{ url_for('about') }}" class="navbar-brand-right">CONTACT</a>
         </div>
-
         <div class="body-content">
             {% block content %}
             {% endblock %}
             <hr/>
             <footer>
-                <p>© 2018</p>
+                <p>© 2020</p>
             </footer>
         </div>
     </body>
-</html>
+</html>s

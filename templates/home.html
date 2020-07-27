@@ -2,14 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Hello, Flask</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+        <title>Chanakya Kaspa</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}"  />
     </head>
-    <body background-color: lightslategray>
-        {%if name %}
+    <body background-color: lightslategray >
+        <!-- {%if name %}
             <span class="message">Hello there, {{ name }}!</span> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
         {% else %}
             <span class="message">What's your name? Provide it after /hello/ in the URL.</span>
-        {% endif %}
+        {% endif %} -->
+            {% extends "layout.html" %}
+            {% block title %}>
+            Home
+            {% endblock %}
+            {% block content %}
+            <div>
+            <p><b>Chanakya Kaspa | Senior Software Engineer</b></p>
+            
+            <p>Hi, my name is Chanakya Kaspa and welcome to my personal website.</p>
+            <p></p>
+            <p>I'm a software engineer currently working on Data products and specialized in creating the ETL Pipelines for complex data consumption.</p>
+            <p>As a software developer, I always thrives to learn new technologies apart from my regular stories. I am diligent , Results-Driven Software Developer and have good knowledge on latest technologies.</p>
+            <p>I have worked on Kafka and Microsoft Bot Framework. Implemented Real time notifications using Kafka and saved 1.8M$ in avoiding document print costs. I like to automate regular work, thus created macros to many tasks like Publishing the status reports , raising a review board request in one click and pre - populating the data for change control requests. These automations, increased the developers productivity by 20-30%.</p>
+            <p> I have experience in Splunk,Kafka, App-Dynamics,Agile Methodology,Java, WPF, WCF, C#, VB.NET, ASP.NET, MS SQL Server, Informix, IBM DB2, VB,SSIS Package, Angular JS, Github, Jenkins, Java, MS Bot framework.</p>
+            </div>
+            {% endblock %}
     </body>
 </html>
