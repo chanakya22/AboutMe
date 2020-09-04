@@ -28,6 +28,10 @@ def home():
     # return "Hello, Flask!"
     return render_template("home.html")
 
+@app.route("/contact/")
+def contact():
+    return render_template("contact.html")
+
 
 
 @app.route("/<name>")

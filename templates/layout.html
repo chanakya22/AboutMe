@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+        <link rel="stylesheet" href="../css/social-circles.min.css">
     </head>
 
     <body class = "body-bg">
@@ -13,7 +14,7 @@
             <a href="{{ url_for('portfolio') }}" class="navbar-brand-left">PORTFOLIO</a>
             <a href="{{ url_for('home') }}" margin-left="50px" class="navbar-brand-left">CHANAKYA KASPA</a>
             <a href="{{ url_for('home') }}" class="navbar-brand-right">BLOG</a>
-            <a href="{{ url_for('about') }}" class="navbar-brand-right">CONTACT</a>
+            <a href="{{ url_for('contact') }}" class="navbar-brand-right">CONTACT</a>
         </div>
         <div class="body-content">
             {% block content %}
